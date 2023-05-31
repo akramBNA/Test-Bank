@@ -1,7 +1,10 @@
+// Description:
+
 //given two arrays, the first is the key for the lock, the second is the hidden combo
 //try to open the lock with minimum rotations .
 //example: ShortestLockCombinations("926","487") ==> ['5 Rotations ', '4 Rotations ', '1 Rotations ']
 
+// Solution:
 
 function CombosDifference(num1,num2) {
 	var sum1= num1-num2
@@ -33,8 +36,8 @@ function ShortestLockCombinations(key, hidden) {
 		return "Enter a key and a hidden combo"
 	} else {
 	//check also if entered arguments are strings
-	//and if any of entered strings lengths is different than 3
-		if(typeof key !== 'string' || typeof hidden !== 'string' || key.length !== 3 || hidden.length !== 3){
+	//and if any of entered strings length is different than the other
+		if(typeof key !== 'string' || typeof hidden !== 'string' || key.length !== hidden.length){
 			return "Enter 2 valid strings"
 		}
 	  else {
